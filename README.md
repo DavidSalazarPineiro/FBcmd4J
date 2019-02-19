@@ -11,7 +11,7 @@ Uso
 TODO: Agregar instrucciones de uso
 
 Créditos
-TODO: Agregar autor(es)
+David Alexandro Salazar Piñeiro 
 
 Licencia
 TODO: Agregar Licencia
