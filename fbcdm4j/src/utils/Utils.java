@@ -14,6 +14,7 @@ import java.util.function.BiConsumer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import facebook4j.Facebook;
+import facebook4j.FacebookException;
 import facebook4j.FacebookFactory;
 import facebook4j.auth.AccessToken;
 import facebook4j.Post;
@@ -57,6 +58,33 @@ public class Utils
 			System.out.println("Mensaje: " + posts_.getMessage());
 		}
 		System.out.println(". . . . . . . . . . . . . . . . . .");
+	}
+	
+	
+	public static void postLink(String link, Facebook fb) {
+		try 
+		{
+			fb.postLink(new URL(link));
+		} 
+		catch (MalformedURLException e) 
+		{
+			logger.error(e);
+		} 
+		catch (FacebookException e) 
+		{
+		logger.error(e);
+		}
+	}
+	
+	public static void postStatus(String msg, Facebook fb) {
+		try 
+		{
+			fb.postStatusMessage(msg);
+		} 
+		catch (FacebookException e) 
+		{
+			logger.error(e);
+		}		
 	}
 	
 	public static String Save_Post(String fileName, List<Post> posts) 

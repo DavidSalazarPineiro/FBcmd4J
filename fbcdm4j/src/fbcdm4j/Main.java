@@ -73,6 +73,16 @@ public class Main {
 						SaveTxt("Wall", wall, scanner);
 						break;
 					case 3:
+						System.out.println("-- Create Post --: ");
+						String estado = scanner.nextLine();
+						Utils.postStatus(estado, fb);
+						break;
+					case 4:
+						System.out.println("-- Post Url --: ");
+						String link = scanner.nextLine();
+						Utils.postLink(link, fb);
+						break;
+					case 5:
 						System.out.println("Salir");
 						System.exit(0);
 						break;
