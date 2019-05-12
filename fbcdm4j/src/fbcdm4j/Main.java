@@ -63,6 +63,19 @@ public class Main {
 						}
 						SaveTxt("NewsFeed", newsFeed,scanner);
 						break;
+					case 2:
+						System.out.println(" |- Show Wall -|");
+						ResponseList<Post> wall = fb.getPosts();
+						for (Post p : wall) 
+						{
+							Utils.printPost(p);
+						}		
+						SaveTxt("Wall", wall, scanner);
+						break;
+					case 3:
+						System.out.println("Salir");
+						System.exit(0);
+						break;
 					default:
 						logger.error("Opción inválida");
 						break;

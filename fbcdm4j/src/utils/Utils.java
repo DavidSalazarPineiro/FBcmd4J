@@ -59,7 +59,6 @@ public class Utils
 		System.out.println(". . . . . . . . . . . . . . . . . .");
 	}
 	
-	
 	public static String Save_Post(String fileName, List<Post> posts) 
 	{
 		File file = new File(fileName + ".txt");
