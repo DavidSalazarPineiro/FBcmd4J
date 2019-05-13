@@ -1,0 +1,2 @@
+2019-05-12 19:50:47.978 [main] INFO  org.fbcmd4j.Main - Iniciando app
+2019-05-12 19:50:53.697 [main] ERROR org.fbcmd4j.Main - An active access token must be used to query information about the current user.
